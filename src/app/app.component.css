@@ -1,0 +1,23 @@
+
+  
+/* Hide scrollbar by default */
+*::-webkit-scrollbar {
+    width: 6px; /* Adjust the width as needed */
+    background-color: transparent;
+  }
+  
+  /* Style the scrollbar thumb */
+  *::-webkit-scrollbar-thumb {
+    background-color: #333; /* Change this to your desired background color */
+    border-radius: 6px; /* Adjust the radius as needed */
+  }
+  
+  /* Hide the scrollbar thumb when not hovering */
+  .scrollbar-hidden::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  /* Show the scrollbar thumb when hovering */
+  .scrollbar-hidden:hover::-webkit-scrollbar-thumb {
+    background-color: #333; /* Change this to your desired background color */
+  }

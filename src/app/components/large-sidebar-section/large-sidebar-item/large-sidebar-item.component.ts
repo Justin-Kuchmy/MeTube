@@ -28,7 +28,8 @@ export class LargeSidebarItemComponent implements OnInit {
   @Input() title = "''";
   @Input() url = "''";
   ngOnInit(): void {
-    
+    //console.log(this.IconOrImgUrl, " ", this.icons[this.IconOrImgUrl])
+    // console.log(this.IconOrImgUrl)
     this.isActive = true;
   }
 

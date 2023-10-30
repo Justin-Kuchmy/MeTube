@@ -16,28 +16,28 @@ export const categories = [
     "Coding",
 ];
 export const MainIcons = [
-  {Icon: 'Home', title: 'Home', url: '/'},
-  {Icon: 'Shorts', title: 'Shorts', url: '/Shorts'},
-  {Icon: 'Subscriptions', title: 'Subscriptions', url: '/Subscriptions'},
-  {Icon: 'Library', title: 'Library', url: '/Library'}
+  {icon: 'Home', title: 'Home', url: '/'},
+  {icon: 'Shorts', title: 'Shorts', url: '/Shorts'},
+  {icon: 'Subscriptions', title: 'Subscriptions', url: '/Subscriptions'},
+  {icon: 'Library', title: 'Library', url: '/Library'}
 ]
 
 export const SecondaryIcons = [
-  {Icon: 'History', title: 'History', url: '/History'},
-  {Icon: 'Your Videos', title: 'Your Videos', url: '/YourVideos'},
-  {Icon: 'Watch Later', title: 'Watch Later', url: '/WatchLater'},
-  {Icon: 'Favourites', title: 'Favourites', url: '/Favourites'},
-  {Icon: 'Likes', title: 'Likes', url: '/Likes'},
+  {icon: 'History', title: 'History', url: '/History'},
+  {icon: 'Your Videos', title: 'Your Videos', url: '/YourVideos'},
+  {icon: 'Watch Later', title: 'Watch Later', url: '/WatchLater'},
+  {icon: 'Favourites', title: 'Favourites', url: '/Favourites'},
+  {icon: 'Likes', title: 'Likes', url: '/Likes'},
 ]
 
 export const ExploreIcons = [
-  {Icon: 'Trending', title: 'Trending', url: '/Trending'},
-  {Icon: 'Music', title: 'Music', url: '/Music'},
-  {Icon: 'Movies & TV', title: 'Movies & TV', url: '/Movies & TV'},
-  {Icon: 'Live', title: 'Live', url: '/Live'},
-  {Icon: 'Gaming', title: 'Gaming', url: '/Gaming'},
-  {Icon: 'News', title: 'News', url: '/News'},
-  {Icon: 'Learning', title: 'Learning', url: '/Learning'},
+  {icon: 'Trending', title: 'Trending', url: '/Trending'},
+  {icon: 'Music', title: 'Music', url: '/Music'},
+  {icon: 'Movies & TV', title: 'Movies & TV', url: '/Movies & TV'},
+  {icon: 'Live', title: 'Live', url: '/Live'},
+  {icon: 'Gaming', title: 'Gaming', url: '/Gaming'},
+  {icon: 'News', title: 'News', url: '/News'},
+  {icon: 'Learning', title: 'Learning', url: '/Learning'},
 ]
 
 

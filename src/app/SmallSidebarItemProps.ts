@@ -1,6 +1,6 @@
 export interface SmallSidebarItemProps 
 {
-    Icon: string
+    icon: string
     title: string
     url: string
 }

@@ -1,5 +1,7 @@
 export interface PlaylistProps 
 {
     id: string,
-    name: string
+    title: string,
+    icon: string
+
 }

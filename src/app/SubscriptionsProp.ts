@@ -1,5 +1,5 @@
 export interface SubscriptionsProp {
-    channelName: string,
-    imgUrl: string,
+    name: string,
+    image: string,
     id: string,
 }

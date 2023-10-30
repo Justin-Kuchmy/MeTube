@@ -1,7 +1,7 @@
 
 <div class="flex gap-10 lg:gap-20 justify-between pt-2 mb-6 mx-4">
     <div class="gap-4 items-center flex-shrink-0 {{showfullWidthSearch ? 'hidden' : 'flex'}}">
-        <custom-button [variant]="'ghost'" [size]="'icon'" (click)="showAlert('Hamburger icon')" [buttonProps]="{disabled: false}">
+        <custom-button [variant]="'ghost'" [size]="'icon'" (click)="toggleHamburger()" [buttonProps]="{disabled: false}">
             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
               </svg>

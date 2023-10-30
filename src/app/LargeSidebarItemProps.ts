@@ -1,6 +1,6 @@
 export interface LargeSidebarItemProps 
 {
-    Icon: string
+    icon: string
     title: string
     url: string
     isActive?: boolean

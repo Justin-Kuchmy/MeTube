@@ -13,4 +13,10 @@ export class AppComponent {
   categories: string[] = categories;
   VideoData: VideoGridItemProps[] = videos;
   selectedCategory: string = "";
+  HamburgerActive: boolean = false;
+  hamburgerClicked(isActive: boolean)
+  {
+    this.HamburgerActive = isActive;
+    console.log(this.HamburgerActive);
+  }
 }

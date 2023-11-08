@@ -1,17 +1,18 @@
 <div class="max-h-screen flex flex-col">
-  <app-page-header [HamburgerIsActive]="this.HamburgerActive" (HamburgerActive)="hamburgerClicked($event)"></app-page-header>
+  <app-page-header (ThreeDotsClicked)="toggleThreeDotsMenu()"></app-page-header>
   <div class="grid grid-cols-[auto,1fr] h-[1000px] flex-grow-1 overflow-auto">
     <div class="sidebar-container overflow-auto">
-      <sidebar [HamburgerIsActive]="this.HamburgerActive" (HamburgerActive)="hamburgerClicked($event)"></sidebar>
+      <sidebar></sidebar>
     </div>
     <div class="overflow-x-hidden px-8 pb-4">
       <div class="sticky top-0 bg-white z-10 pb-4">
         <category-pills [CategoryPillProps]="categories" [SelectedCategory]="selectedCategory"></category-pills>
       </div>
       <div class="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
-        <VideoGridItem  *ngFor="let video of VideoData let i = index" [video]="video">
+        <VideoGridItem *ngFor="let video of VideoData let i = index" [video]="video">
         </VideoGridItem>
       </div>
     </div>
   </div>
+  <extra-icons-modal *ngIf="ThreeDotsClicked"></extra-icons-modal>
 </div>

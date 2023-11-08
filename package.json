@@ -20,6 +20,7 @@
     "@angular/router": "^16.1.0",
     "class-variance-authority": "^0.7.0",
     "rxjs": "~7.8.0",
+    "tailwind": "^4.0.0",
     "tailwind-merge": "^1.14.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

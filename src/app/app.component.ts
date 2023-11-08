@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { categories } from './components/data/home';
 import { videos } from './components/data/home';
 import { VideoGridItemProps } from './VideoGridItemProps';
+import { HamburgerService } from './hamburger.service';
 
 @Component({
   selector: 'app-root',
@@ -14,9 +15,11 @@ export class AppComponent {
   VideoData: VideoGridItemProps[] = videos;
   selectedCategory: string = "";
   HamburgerActive: boolean = false;
-  hamburgerClicked(isActive: boolean)
-  {
-    this.HamburgerActive = isActive;
-    console.log(this.HamburgerActive);
+  ThreeDotsClicked: boolean = false;
+
+  toggleThreeDotsMenu() {
+    this.ThreeDotsClicked = !this.ThreeDotsClicked;
   }
+
+
 }

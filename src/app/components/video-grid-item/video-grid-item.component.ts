@@ -1,6 +1,6 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { VideoGridItemProps } from '@app/VideoGridItemProps';
-import {formatTimeAgo} from '../../utils/formatTimeAgo';
+import { formatTimeAgo } from '../../utils/formatTimeAgo';
 
 
 
@@ -40,12 +40,12 @@ import {formatTimeAgo} from '../../utils/formatTimeAgo';
       </div>
     </div>
 
-  `,  
+  `,
   styles: [
   ]
 })
 export class VideoGridItemComponent implements OnInit {
-  
+
   @Input() videoData!: VideoGridItemProps[];
   @Input() video: VideoGridItemProps = {
     id: '',
@@ -64,7 +64,7 @@ export class VideoGridItemComponent implements OnInit {
   @ViewChild('imageDiv', { static: false }) imageDiv!: ElementRef;
   @ViewChild('imageLink', { static: false }) imageLink!: ElementRef;
   @ViewChild('videoRef', { static: false }) videoRef!: ElementRef;
-  isVideoPlaying: boolean  = false;
+  isVideoPlaying: boolean = false;
 
 
   ngOnInit() {
@@ -91,14 +91,12 @@ export class VideoGridItemComponent implements OnInit {
 
   toggleVideoPlayback(videoElement: HTMLVideoElement) {
     this.isVideoPlaying = !this.isVideoPlaying;
-    if(this.isVideoPlaying)
-    {
+    if (this.isVideoPlaying) {
       videoElement.currentTime = 0;
       videoElement.play();
       videoElement.muted = true;
     }
-    else if(!this.isVideoPlaying)
-    {
+    else if (!this.isVideoPlaying) {
       videoElement.pause();
     }
   }

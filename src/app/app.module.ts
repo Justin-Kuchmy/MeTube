@@ -13,6 +13,8 @@ import { SmallSidebarItemComponent } from './components/small-side-bar/small-sid
 import { SafeHtmlPipe } from './utils/safe-html.pipe';
 import { LargeSidebarSectionComponent } from './components/large-sidebar-section/large-sidebar-section.component';
 import { LargeSidebarItemComponent } from './components/large-sidebar-section/large-sidebar-item/large-sidebar-item.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ExtraIconsModalComponent } from './layouts/extra-icons-modal/extra-icons-modal.component';
 
 
 @NgModule({
@@ -28,11 +30,12 @@ import { LargeSidebarItemComponent } from './components/large-sidebar-section/la
     SmallSidebarItemComponent,
     SafeHtmlPipe,
     LargeSidebarSectionComponent,
-    LargeSidebarItemComponent
-    
+    LargeSidebarItemComponent,
+    ExtraIconsModalComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],

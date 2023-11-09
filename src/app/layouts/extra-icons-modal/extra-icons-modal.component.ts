@@ -3,8 +3,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 @Component({
   selector: 'extra-icons-modal',
   template: `
-    <div class="w-[200px] border border-1 border-black">
-            <div class="sticky absolute bottom-0 z-[999] grid grid-cols-2 bg-white p-4 m-1">
+    <div class="">
+            <div class="absolute top-8 right-0 z-[999] grid grid-cols-1 bg-white p-4 m-1 border border-1 border-black">
               <div class="bg-white hover:bg-gray-200 mr-1 mb-1 "(click)="showAlert('Upload')">
                 <!-- Upload Icon -->
                 <custom-button [variant]="'ghost'" [size]="'icon'" >
